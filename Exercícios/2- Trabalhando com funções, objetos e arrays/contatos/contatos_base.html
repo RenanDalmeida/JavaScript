@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+<body>
+    <label for="nome">
+        Nome: <input type="text" id="nome" name="nome" required/>
+    </label>
+    <label for="email">
+        Email: <input type="text" id="email" name="email" required/>
+    </label>
+    <label for="telefone">
+        Telefone: <input type="text" id="telefone" name="telefone" required/>
+    </label>
+    <button type="button" id='btnCadastrar'>Cadastrar</button>
+    <button type="button" id='btnRemover'>Remover</button>
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Senha</th>
+        </thead>
+        <tbody id="corpo-tabela"></tbody>
+    </table>   
+    <script src="script.js"></script>
+</body>
+</html>

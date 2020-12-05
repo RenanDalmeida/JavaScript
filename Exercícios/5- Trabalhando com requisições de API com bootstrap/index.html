@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <title>Categorias</title>
+  </head>
+  <body>
+    <nav class="navbar" style="background-color: black;">
+      <a class="navbar-brand" href="#" style="margin: auto;">
+        <img src="NyousLogo.png" width="60" height="60" alt="" loading="lazy"> <!--Esse loading lazy serve para descarregar a imagem caso ela não esteja sendo vista, poupando processamento.-->
+      </a>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-dark text-light">
+      <div class="container">
+        <h1 class="display-4">Categorias</h1>
+        <p class="lead">Cadastre novas categorias, visualize, altere e delete categorias já cadastradas.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="formCategoria">
+          <input type="hidden" id="inputIdCategoria"/>
+          <div class="form-group">
+            <label for="inputTituloCategoria">Título da Categoria</label>
+            <input type="text" class="form-control" id="inputTituloCategoria" aria-describedby="inputTituloCategoria" placeholder="Ação.. Aventura..">
+          </div>
+          <button type="reset" class="btn btn-secondary">Cancelar</button>
+          <button type="submit" class="btn btn-success" id="btnCadastrar">Cadastrar</button>
+      </form>
+
+      <div style="margin: auto;">
+        <table class="table table-bordered" style="margin-top: 40px;">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Título da Categoria</th>
+                <th scope="col">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+      </div>
+    </div>
+      <script src="script.js"></script>
+  </body>
+</html>

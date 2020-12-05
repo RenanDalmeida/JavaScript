@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Frutas</title>
+</head>
+<body>
+    <label for="fruta">
+        Fruta: <input type="text" required id='fruta' name="fruta"/>
+    </label>
+    <button type="submit" id="btnCadastrar">Cadastrar</button>
+    <button type="submit" id="btnRemover">Remover</button>
+    <table>
+        <thead>
+            <th>
+                Nome da Fruta
+            </th>
+        </thead>
+        <tbody id="tabela-lista-corpo"></tbody>
+    </table>   
+    <script src="script.js"></script>
+</body>
+</html>

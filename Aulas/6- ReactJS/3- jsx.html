@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSX</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!--Para trabalhar com JSX precisamos além dos pacotes do react o pacote do Babel.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js" integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <!--Coloque esse type para trabalhar com JSX-->
+    <script type="text/babel">
+        ReactDOM.render(
+            //É assim que coloca o estilo inline, entre {}
+            <h1 style={{background: "gray"}}>Hello World, JSX</h1>,
+            document.querySelector("#root")
+        );
+        //Para colocar mais de um elemento no render, coloque dentro de uma div. Exemplo:
+        /*
+            ReactDOM.render(
+                <div>
+                    <label></label>
+                    <input></input>
+                    <button></button>
+                </div>,
+                document.querySelector("#root")
+            );
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+    ENUNCIADO:
+
+    Com o html(calcular_temperatura.html) fornecido informe uma temperatura e a partir da escolha do usuário informe o mesmo em Celcius ou Fahrenheit
+    https://michaelis.uol.com.br/moderno-ingles/tabela-de-conversao-de-temperaturas-em-graus-celsius-e-fahrenheit/
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Conversor de Temperatura</title>
+        <style>
+            .resultado {
+                background: #EEEEEE;
+                width: 505px;
+                height: 100px;
+                border: solid 1.5px black;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="formtemperatura">
+            <label for="temperatura">
+                Temperatura: 
+                <input type="text" name="temperatura" id="temperatura" required>
+            </label>
+            <input type="radio"  id="celsius" name="tipo">Celsius</checkbox>
+            <input type="radio"  id="fahrenheit" name="tipo">Fahrenheit</checkbox>
+            <button type="submit" id="btnConverter">Converter</button>
+            <div class="resultado"></div>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
